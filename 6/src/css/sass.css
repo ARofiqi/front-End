@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../../assets/NunitoSans.ttf");
+}
+
+header {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+header .company-logo .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .company-logo .logo .poligon {
+  width: 10.78px;
+  height: 22.31px;
+  background: #ffffff;
+  -webkit-transform: rotate(41.31deg);
+          transform: rotate(41.31deg);
+  position: absolute;
+}
+
+header .company-logo .logo .ellips {
+  width: 35px;
+  height: 35px;
+  background: #ffca1d;
+  border-radius: 50%;
+}
+
+header .company-logo p {
+  width: 157px;
+  height: 45px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  width: 95px;
+  height: 30px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #eeeeee;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+header div button {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1f1f1f;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+header div #login:hover {
+  opacity: 0.8;
+}
+
+header div #signup {
+  background-color: #ffca1d;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header div #signup:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=sass.css.map */

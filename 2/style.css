@@ -1,0 +1,419 @@
+*,
+head,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  /* overflow: hidden; */
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("assets/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: comforter;
+  src: url("assets/ComforterBrush-Regular.ttf");
+}
+
+.container {
+  padding: 20px 100px;
+}
+
+header {
+  
+  display: flex;
+  flex-direction: row;
+  background-color: #191a19;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.logo {
+  color: #ff7420;
+  display: grid;
+  align-items: center;
+}
+
+.aktif {
+  color: #ff7420;
+  border-bottom: 2px #ff7420 solid;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 20px 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+.header-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-btn .bahasa {
+  color: white;
+  margin-right: 30px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-btn .contact button {
+  color: white;
+  background-color: #ff7420;
+  padding: 15px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.header-btn .contact button:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  height: 700px;
+  /* background: linear-gradient(270deg, #000000 11.13%, rgba(0, 0, 0, 0) 100%); */
+  background: linear-gradient(90deg, #000000 11.13%, rgba(0, 0, 0, 0) 100%), url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero .left .penjelasan {
+  margin-bottom: 85px;
+  color: white;
+}
+
+.hero .left .penjelasan h2 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero .left .penjelasan p {
+  font-size: 20px;
+}
+
+.hero .left .hero-btn {
+  display: flex;
+}
+
+.btn {
+  font-size: 24px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.hero-btn .service button {
+  background-color: #ff7420;
+  color: white;
+  margin-right: 24px;
+}
+
+.hero-btn .view-project button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.hero .right .card-hero {
+  background-color: #ff7420;
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+
+  position: absolute;
+  left: 720px;
+  top: 740px;
+}
+
+.card-hero ul {
+  line-height: 40px;
+}
+
+main .about {
+  background-color: #191a19;
+  padding-top: 40px;
+}
+
+.about .exp {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card-exp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-exp h2 {
+  font-size: 43px;
+  color: #ff7420;
+}
+
+.card-exp p {
+  font-size: 14px;
+  color: white;
+}
+
+.definisi-exp {
+  color: #ffffff;
+
+  padding: 150px 0px 60px 480px;
+}
+
+.definisi-exp h2 {
+  font-size: 64px;
+}
+
+.definisi-exp h2 span {
+  color: #ff7420;
+}
+
+.definisi-exp p {
+  font-size: 20px;
+  width: 710px;
+  padding-top: 40px;
+}
+
+.definisi-exp .sign {
+  padding-top: 100px;
+  line-height: 15px;
+}
+
+.definisi-exp .sign h2 {
+  font-family: comforter;
+  font-weight: 100;
+  font-size: 64 px;
+}
+
+.definisi-exp .sign p {
+  font-size: 16px;
+}
+
+.img-about {
+  position: absolute;
+  top: 1349px;
+  left: 50px;
+  scale: 1.5;
+}
+
+main .project {
+  background-color: #ff7420;
+  padding-top: 40px;
+}
+
+.project .step-list {
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border-bottom: 4px white solid;
+}
+
+.step-list .step {
+  width: 230px;
+  text-align: center;
+}
+
+.step h2 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.step p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.step .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 5px rgb(255, 166, 94) solid;
+  margin: 10px auto;
+
+  position: relative;
+  top: 21px;
+}
+
+.fitur-project {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fitur-project .fitur-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.fitur-header h1 {
+  font-size: 40px;
+}
+
+.fitur-header .nav-project ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.nav-project ul li {
+  list-style: none;
+}
+
+.nav-project ul li a {
+  text-decoration: none;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.nav-project ul li a:hover {
+  opacity: 0.7;
+}
+
+.nav-project ul li .aktif-project {
+  color: #000000;
+  border-bottom: black 3px solid;
+}
+
+.img-building .list-card {
+  width: 100vw;
+  
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x;
+  gap: 20px;
+
+  position: relative;
+  right: 100px;
+}
+
+.img-building .list-card .card {
+  min-width: 350px;
+  min-height: 450px;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+  overflow: hidden;
+}
+
+.img-building .list-card .card section{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.08%, rgba(25, 26, 25, 0.5) 100%);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  width: 330px;
+  height: 430px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  z-index: 2;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.img-building .more-btn {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #191a19;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+}
+
+.rating {
+  color: rgb(255, 255, 255);
+  background-color: #191a19;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating .title-rating {
+  color: #ff7420;
+}
+
+.rating .definisi-rating {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.definisi-rating h5{
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.definisi-rating h4{
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.rating .foto-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.prev,
+.next {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+}
+
+.rating .foto-rating .next img {
+  rotate: 180deg;
+}
